@@ -306,8 +306,8 @@ jobs:
             - name: Checkout phpBB
               uses: actions/checkout@v4
               with:
-                  repository: phpbb/phpbb
-                  ref: master
+                  repository: rxu/phpbb3
+                  ref: ${{ env.PHPBB_BRANCH }}
                   path: phpBB3
 
             - name: Checkout extension
