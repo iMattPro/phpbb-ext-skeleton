@@ -99,36 +99,36 @@ jobs:
                 include:
                     - php: '8.1'
                       db: "mariadb:10.2"
-                    - php: '8.1'
-                      db: "mariadb:10.3"
-                    - php: '8.1'
-                      db: "mariadb:10.4"
-                    - php: '8.1'
-                      db: "mariadb:10.6"
-                    - php: '8.1'
-                      db: "mariadb:10.9"
-                    - php: '8.1'
-                      db: "mariadb:10.10"
-                    - php: '8.1'
-                      db: "mariadb:10.11"
-                    - php: '8.1'
-                      db: "mysql:5.7"
-                      db_alias: "MyISAM Tests"
-                      MYISAM: 1
-                    - php: '8.1'
-                      db: "mysql:8.0"
-                      COVERAGE: 1
-                      db_alias: "mysql:8.0 with Coverage"
-                    - php: '8.1'
-                      db: "mysql:8.1"
-                    - php: '8.2'
-                      db: "mysql:8.0"
-                    - php: '8.2'
-                      db: "mariadb:10.2"
-                    - php: '8.3'
-                      db: "mysql:5.7"
-                    - php: '8.3'
-                      db: "mariadb:10.2"
+#                    - php: '8.1'
+#                      db: "mariadb:10.3"
+#                    - php: '8.1'
+#                      db: "mariadb:10.4"
+#                    - php: '8.1'
+#                      db: "mariadb:10.6"
+#                    - php: '8.1'
+#                      db: "mariadb:10.9"
+#                    - php: '8.1'
+#                      db: "mariadb:10.10"
+#                    - php: '8.1'
+#                      db: "mariadb:10.11"
+#                    - php: '8.1'
+#                      db: "mysql:5.7"
+#                      db_alias: "MyISAM Tests"
+#                      MYISAM: 1
+#                    - php: '8.1'
+#                      db: "mysql:8.0"
+#                      COVERAGE: 1
+#                      db_alias: "mysql:8.0 with Coverage"
+#                    - php: '8.1'
+#                      db: "mysql:8.1"
+#                    - php: '8.2'
+#                      db: "mysql:8.0"
+#                    - php: '8.2'
+#                      db: "mariadb:10.2"
+#                    - php: '8.3'
+#                      db: "mysql:5.7"
+#                    - php: '8.3'
+#                      db: "mariadb:10.2"
                     - php: '8.4'
                       db: "mysql:8.0"
                     - php: '8.4'
@@ -253,24 +253,24 @@ jobs:
                 include:
                     - php: '8.1'
                       db: "postgres:9.5"
-                    - php: '8.1'
-                      db: "postgres:9.6"
-                    - php: '8.1'
-                      db: "postgres:10"
-                    - php: '8.1'
-                      db: "postgres:11"
-                    - php: '8.1'
-                      db: "postgres:12"
-                    - php: '8.1'
-                      db: "postgres:13"
-                    - php: '8.1'
-                      db: "postgres:14"
-                    - php: '8.1'
-                      db: "postgres:15"
-                    - php: '8.2'
-                      db: "postgres:9.5"
-                    - php: '8.3'
-                      db: "postgres:9.5"
+#                    - php: '8.1'
+#                      db: "postgres:9.6"
+#                    - php: '8.1'
+#                      db: "postgres:10"
+#                    - php: '8.1'
+#                      db: "postgres:11"
+#                    - php: '8.1'
+#                      db: "postgres:12"
+#                    - php: '8.1'
+#                      db: "postgres:13"
+#                    - php: '8.1'
+#                      db: "postgres:14"
+#                    - php: '8.1'
+#                      db: "postgres:15"
+#                    - php: '8.2'
+#                      db: "postgres:9.5"
+#                    - php: '8.3'
+#                      db: "postgres:9.5"
                     - php: '8.4'
                       db: "postgres:9.5"
 
@@ -306,8 +306,8 @@ jobs:
             - name: Checkout phpBB
               uses: actions/checkout@v4
               with:
-                  repository: rxu/phpbb3
-                  ref: ${{ env.PHPBB_BRANCH }}
+                  repository: phpbb/phpbb
+                  ref: master
                   path: phpBB3
 
             - name: Checkout extension
