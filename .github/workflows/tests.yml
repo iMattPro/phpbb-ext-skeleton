@@ -19,6 +19,7 @@ jobs:
         uses: iMattPro/test-framework/.github/workflows/tests.yml@experimental-3.3.x
         with:
             EXTNAME: phpbb/skeleton # Your extension vendor/package name
+            CODECOV: 1
             RUN_FUNCTIONAL_TESTS: 0
         secrets:
             CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }} # Do not change this
